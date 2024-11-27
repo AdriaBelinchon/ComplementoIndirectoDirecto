@@ -22,4 +22,10 @@ jobs:
         run: echo Hello World
       - name: Upload directory
         run: dir
+
+      - name: Create directory
+        run: mkdir "artifact/PhysicsGame/"
+
+      - name: Copy directory
+        run: copy "dir" "artifact/PhysicsGame/"
         
